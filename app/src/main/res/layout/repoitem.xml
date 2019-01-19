@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="140dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.lenovo.httpapi.XCRoundImageView
+            android:id="@+id/user_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginTop="35dp" />
+
+
+        <TextView
+            android:id="@+id/repo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="项目名:"
+
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_name_text"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:padding="3dp"
+            android:text="123456"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/repo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="项目id:"
+            android:textColor="#242424"
+            android:textSize="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/repo_star"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+
+            android:text="star:"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/repo_fork"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="fork:"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_watcher"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="watcher:"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_language"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="274dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="C#"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/repo_starnum"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="11152"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_forknum"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="25425"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_watchernum"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="151541"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_id_test"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="1524"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/prob_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="存在问题:"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/prob_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="02:11"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="110dp"
+            android:gravity="left"
+            android:paddingTop="3dp"
+            android:text="项目描述:"
+
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_update_at"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="更新时间:"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_undate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="2007-10-11 15:55:31"
+            android:textColor="#242424"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/repo_detail_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="153dp"
+            android:layout_marginTop="110dp"
+            android:gravity="left"
+            android:padding="3dp"
+            android:textColor="#666666 "
+            android:textSize="10dp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

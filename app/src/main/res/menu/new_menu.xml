@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:background="#ffffff">
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/Explore"
+            android:checked="true"
+            android:icon="@mipmap/explore"
+            android:title="Explore"/>
+        <item
+            android:id="@+id/Repository"
+            android:icon="@mipmap/repository"
+
+            android:title="Repository"/>
+
+        <item
+            android:id="@+id/Issue"
+            android:icon="@mipmap/issues"
+            android:title="Issue"/>
+        <item
+            android:id="@+id/Follow"
+            android:icon="@mipmap/follow"
+            android:title="Follow"/>
+        <item
+            android:id="@+id/Event"
+            android:icon="@mipmap/events"
+            android:title="Event"/>
+
+        <item
+            android:id="@+id/Starred"
+            android:icon="@mipmap/starred"
+            android:title="Starred"/>
+        <item
+            android:id="@+id/Gist"
+            android:icon="@mipmap/gists"
+            android:title="Gist"/>
+        <item
+            android:id="@+id/Setting"
+            android:icon="@mipmap/setting"
+            android:title="Setting"/>
+        <item
+            android:id="@+id/About"
+            android:icon="@mipmap/about"
+            android:title="About"/>
+        <item
+
+
+            android:title=""/>
+
+    </group>
+
+</menu>

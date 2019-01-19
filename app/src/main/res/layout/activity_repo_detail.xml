@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_repo_detail"
+    tools:context=".RepoDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"
+
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="#48D1CC"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/go_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/goback"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/enjoy1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/repo_intro"
+                    android:layout_width="281dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#ffffff"
+                    android:text="Design patterns implem- ented in Java"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/repo_time"
+                    android:layout_width="149dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="105dp"
+                    android:text="2014/08/10"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/repo_name"
+                    android:layout_width="280dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="150dp"
+                    android:text="java-design"
+                    android:textColor="#ffffff"
+                    android:textSize="40dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.example.lenovo.httpapi.XCRoundImageView
+                    android:id="@+id/personImages"
+                    android:layout_width="102dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="64dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="105dp"
+                    android:text="Create at"
+                    android:textColor="#ffffff"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--<ProgressBar-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:id="@+id/loddingbar3"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginTop="84dp"-->
+                <!--app:layout_constraintLeft_toRightOf="@+id/repo_name"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--/>-->
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/introduction"
+
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/repo_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Repo Infomation"
+                    android:textColor="#000000"
+
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="55dp"
+
+                    android:src="@mipmap/point" />
+
+                <TextView
+                    android:id="@+id/owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="left"
+                    android:text="Owner: "
+                    android:textColor="#000000"
+
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/owner_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="iluwatar"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="84dp"
+                    android:src="@mipmap/point" />
+
+                <TextView
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="left"
+                    android:text="Last Updated: "
+                    android:textColor="#000000"
+
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/update_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="2019/1/03"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="114dp"
+                    android:src="@mipmap/point" />
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="110dp"
+                    android:gravity="left"
+                    android:text="Language： "
+                    android:textColor="#000000"
+
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/language_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="110dp"
+                    android:gravity="left"
+
+                    android:text="Java"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="144dp"
+                    android:src="@mipmap/point" />
+
+                <TextView
+                    android:id="@+id/authority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="left"
+                    android:text="Authority： "
+                    android:textColor="#000000"
+
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/authority_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="left"
+
+                    android:text="Public"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="174dp"
+                    android:src="@mipmap/point" />
+
+                <TextView
+                    android:id="@+id/capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="170dp"
+                    android:gravity="left"
+                    android:text="Capacity： "
+                    android:textColor="#000000"
+
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/capacity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="170dp"
+                    android:gravity="left"
+
+                    android:text="18.0MB"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/git_message"
+                android:layout_width="330dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/events"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="Events"
+                    android:textColor="#000000"
+
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/issues"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="issues"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/stargazers"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="100dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="stargazers"
+
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="140dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/contributors"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="140dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="contributors"
+
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="180dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/forks"
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="180dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="forks"
+
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

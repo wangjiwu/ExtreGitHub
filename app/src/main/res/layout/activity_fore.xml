@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_na"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.httpapi.ForeActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/floatBtn"
+            android:layout_width="85dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="#48D1CC"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/gotop"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#48D1CC"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/main_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/ccc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SearchView
+                android:id="@+id/search_text"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </SearchView>
+
+
+            <ImageView
+                android:id="@+id/reflash"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/viewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="95dp"
+                android:padding="10dp"
+                android:text="Explore"
+                android:textColor="#ffffff"
+                android:textSize="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/switchGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="155dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/follows_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Follows"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+                <RadioButton
+                    android:id="@+id/following_btn"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Following"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/switchGroup_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="155dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/search_repo_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Repository"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/search_user_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="User"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <ProgressBar
+            android:id="@+id/loddingBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recyclerView2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/nodata"
+            android:layout_width="269dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="No Data"
+            android:textColor="#D1D1D1"
+            android:textSize="60dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:headerLayout="@layout/head"
+        app:menu="@menu/new_menu"
+
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

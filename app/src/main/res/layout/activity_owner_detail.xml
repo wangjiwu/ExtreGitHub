@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_owner_detail"
+    tools:context=".OwnerDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"
+
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#000000"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/go_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/goback" />
+
+                <com.example.lenovo.httpapi.XCRoundImageView
+                    android:id="@+id/OwnerIcon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="42dp" />
+
+
+                <ProgressBar
+                    android:id="@+id/loddingBar2"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-72dp" />
+
+
+                <TextView
+                    android:id="@+id/ownerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Jointime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="-22dp"
+                    android:text="Join at:  "
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Jointime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingRight="8dp"
+                    android:text="2018-11-15"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/introduction"
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="personal message"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@mipmap/email" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="left"
+                    android:text="Email: "
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Not set"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="84dp"
+                    android:src="@mipmap/blog1" />
+
+                <TextView
+                    android:id="@+id/Blog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="left"
+                    android:text="Blog: "
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Blog_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="Not set"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="114dp"
+                    android:src="@mipmap/location" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="110dp"
+                    android:gravity="left"
+                    android:text="Location： "
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="110dp"
+                    android:gravity="left"
+
+                    android:text="Not set"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="144dp"
+                    android:src="@mipmap/company" />
+
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="left"
+                    android:text="Company： "
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/company_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="left"
+
+                    android:text="Not set"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/git_message"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Github Message"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/events"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#ffffff"
+                    android:gravity="fill_vertical"
+                    android:text="Events"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="90dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/starred"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="90dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="starred"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="130dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/followers"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="130dp"
+                    android:background="#ffffff"
+                    android:gravity="left|fill_vertical"
+                    android:text="followers"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="170dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/following"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="170dp"
+                    android:background="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:text="following"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="210dp"
+                    android:src="@mipmap/point" />
+
+                <Button
+                    android:id="@+id/gists"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="210dp"
+                    android:background="#ffffff"
+                    android:gravity="fill_vertical"
+                    android:text="gists"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/repository"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="250dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:text="repository"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="250dp"
+                    android:src="@mipmap/point" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

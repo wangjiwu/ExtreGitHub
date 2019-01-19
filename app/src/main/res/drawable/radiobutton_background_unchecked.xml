@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 填充 -->
+    <solid android:color="#48D1CC" />
+    <!-- 圆角 -->
+
+</shape>
