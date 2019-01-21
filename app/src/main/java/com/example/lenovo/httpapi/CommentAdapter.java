@@ -29,6 +29,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
     private static final CommentAdapter mInstance = new CommentAdapter();
 
     public static CommentAdapter getInstance() {
+        mInstance.cleanList();
         return mInstance;
     }
 

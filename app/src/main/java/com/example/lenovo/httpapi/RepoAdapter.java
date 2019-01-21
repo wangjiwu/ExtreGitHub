@@ -24,6 +24,7 @@ public class RepoAdapter extends RecyclerView.Adapter<RepoAdapter.ViewHolder> {
     private static final RepoAdapter mInstance = new RepoAdapter();
 
     public static RepoAdapter getInstance() {
+        mInstance.cleanList();
         return mInstance;
     }
 
@@ -126,6 +127,7 @@ public class RepoAdapter extends RecyclerView.Adapter<RepoAdapter.ViewHolder> {
     }
 
     public void addObjects( ArrayList<Repo> objs){
+
         mList = objs;
         notifyDataSetChanged();
     }

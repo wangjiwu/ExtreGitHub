@@ -92,8 +92,7 @@ public class IssueDetailActivity extends AppCompatActivity {
         pusher_icon = findViewById(R.id.pusher_icon);
         go_back = findViewById(R.id.go_back);
         share = findViewById(R.id.share);
-        faver = findViewById(R.id.faver);
-        issueRecycleView =  findViewById(R.id.issueRecycleView);
+         issueRecycleView =  findViewById(R.id.issueRecycleView);
 
         mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         myAdapterComment =  CommentAdapter.getInstance().getInstance();

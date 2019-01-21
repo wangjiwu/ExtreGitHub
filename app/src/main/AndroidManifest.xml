@@ -50,7 +50,6 @@
         <activity android:name=".RepoForksActivity" />
         <activity android:name=".RepoIssueActivity" />
         <activity android:name=".RepoStargazerActivity" />
-        <activity android:name=".RepoContributorsActivity" />
         <activity android:name=".IssueDetailActivity" />
     </application>
 

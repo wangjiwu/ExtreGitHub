@@ -30,6 +30,7 @@ public class FollowAdapter extends RecyclerView.Adapter<FollowAdapter.ViewHolder
     private static final FollowAdapter mInstance = new FollowAdapter();
 
     public static FollowAdapter getInstance() {
+        mInstance.cleanList();
         return mInstance;
     }
 

@@ -582,6 +582,7 @@ public class ForeActivity extends AppCompatActivity {
 
     //获取repo
     private void getRepoInfo(String flag){
+        myAdapterRepo.cleanList();
         GitHubService request = retrofit.create(GitHubService.class);
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapterRepo);
         scaleInAnimationAdapter.setDuration(500);
@@ -634,6 +635,7 @@ public class ForeActivity extends AppCompatActivity {
     }
     //获取issue
     private void getIssueInfo() {
+        myAdapterIssue.cleanList();
         final GitHubService request = retrofit.create(GitHubService.class);
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapterIssue);
         scaleInAnimationAdapter.setDuration(500);
@@ -694,15 +696,6 @@ public class ForeActivity extends AppCompatActivity {
                         });
                     }
 
-                    ArrayList<Issue> list2 = new ArrayList<>();
-                    Bundle b = new Bundle();
-                    b.putSerializable("msg",(Serializable) list2);
-                    b.putString("flag", "issue");
-                    Message m = new Message();
-                    m.setData(b);
-                    handler.sendMessage(m);
-
-
                 } catch (Exception e) {
                     Toast.makeText(ForeActivity.this, "此用户不存在", Toast.LENGTH_SHORT).show();
                     Log.d("error", e.toString());
@@ -720,6 +713,7 @@ public class ForeActivity extends AppCompatActivity {
     }
     //获取follow
     private void getFollowInfo(String flag){
+        myAdapterFollow.cleanList();
         GitHubService request = retrofit.create(GitHubService.class);
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapterFollow);
         scaleInAnimationAdapter.setDuration(500);
@@ -762,6 +756,7 @@ public class ForeActivity extends AppCompatActivity {
     }
     //获取event
     private void getEventInfo(){
+        myAdapteEvent.cleanList();
         GitHubService request = retrofit.create(GitHubService.class);
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapteEvent);
         scaleInAnimationAdapter.setDuration(500);
@@ -797,6 +792,7 @@ public class ForeActivity extends AppCompatActivity {
     }
     //获取gist
     private void getGistInfo(){
+        myAdapteEvent.cleanList();
         GitHubService request = retrofit.create(GitHubService.class);
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapteGist);
         scaleInAnimationAdapter.setDuration(500);
@@ -859,8 +855,9 @@ public class ForeActivity extends AppCompatActivity {
             }
         });
     }
-
+    //获取搜索到的仓库
     private void getSearchRepo(String key_word) {
+        myAdapterRepo.cleanList();
         GitHubService request = retrofit.create(GitHubService.class);
         //对 发送请求 进行封装
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapterRepo);
@@ -893,8 +890,9 @@ public class ForeActivity extends AppCompatActivity {
             }
         });
     }
-
+    //获取搜索到的用户
     private void getSearchOwner(String key_word) {
+        myAdapterFollow.cleanList();
         GitHubService request = retrofit.create(GitHubService.class);
         //对 发送请求 进行封装
         ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(myAdapterFollow);

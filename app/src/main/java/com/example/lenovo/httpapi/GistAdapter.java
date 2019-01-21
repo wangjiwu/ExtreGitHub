@@ -29,6 +29,7 @@ public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ViewHolder> {
     private static final GistAdapter mInstance = new GistAdapter();
 
     public static GistAdapter getInstance() {
+        mInstance.cleanList();
         return mInstance;
     }
 

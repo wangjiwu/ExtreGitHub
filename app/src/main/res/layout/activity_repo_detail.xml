@@ -55,12 +55,12 @@
                 <TextView
                     android:id="@+id/repo_intro"
                     android:layout_width="281dp"
-                    android:layout_height="33dp"
+                    android:layout_height="40dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="60dp"
-                    android:textColor="#ffffff"
                     android:text="Design patterns implem- ented in Java"
+                    android:textColor="#ffffff"
                     android:textSize="15dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

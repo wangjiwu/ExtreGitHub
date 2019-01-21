@@ -29,6 +29,7 @@ public class IssueAdapter extends RecyclerView.Adapter<IssueAdapter.ViewHolder> 
     private static final IssueAdapter mInstance = new IssueAdapter();
 
     public static IssueAdapter getInstance() {
+        mInstance.cleanList();
         return mInstance;
     }
 

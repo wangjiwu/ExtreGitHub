@@ -30,6 +30,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     private static final EventAdapter mInstance = new EventAdapter();
 
     public static EventAdapter getInstance() {
+        mInstance.cleanList();
         return mInstance;
     }
 
